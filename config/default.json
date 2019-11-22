@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://knick:tango11%2455popsy@cluster0-o6kca.mongodb.net/favouritefonts?retryWrites=true&w=majority",
+  "jwtSecret": "secret"
+}
