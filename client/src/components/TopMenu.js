@@ -9,7 +9,6 @@ import { lightTheme, darkTheme } from "../theme";
 import { GlobalStyles } from "../global";
 
 import AuthContext from "../context/auth/authContext";
-// import AuthState from "../context/auth/AuthState";
 
 import FontContext from "../context/fonts/fontContext";
 

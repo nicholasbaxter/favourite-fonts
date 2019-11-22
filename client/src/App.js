@@ -19,7 +19,6 @@ import AuthContext from "./context/auth/authContext";
 import setAuthToken from "./utils/setAuthToken";
 //Fonts
 import FontContext from "./context/fonts/fontContext";
-// import authContext from "./context/auth/authContext";
 
 if (localStorage.token) {
   setAuthToken(localStorage.token);

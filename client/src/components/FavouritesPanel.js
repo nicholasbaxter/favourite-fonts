@@ -9,7 +9,6 @@ function FavouritesPanel(props) {
 
   useEffect(() => {
     let arr = [];
-    //  console.log(list);
     props.favList.map(item => {
       arr.push(item.replace(/\s+/g, "+"));
     });
@@ -30,8 +29,6 @@ function FavouritesPanel(props) {
       <div
         className={panelShowing ? "fav-panel open" : "fav-panel"}
         style={{
-          //transform: props.favList.length > 0 ? "translate(0, 0)" : "translate(0, 50px)",
-          // backgroundColor: panelShowing ? "rgba(0,0,0,0.3)" : "transparent",
           opacity: props.favList.length > 0 ? "1" : "0",
           position: "fixed",
           bottom: "0px",

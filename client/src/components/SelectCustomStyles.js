@@ -15,10 +15,6 @@ const customStyles = {
         ? "rgba(0,0,0,0.14)"
         : null,
       color: isDisabled ? "#ccc" : isSelected ? "salmon" : "rgba(0, 0, 0, 0.6)",
-      //     ? "white"
-      //     : "black"
-      //   : data.color,
-      // cursor: isDisabled ? "not-allowed" : "default",
 
       ":active": {
         ...styles[":active"],

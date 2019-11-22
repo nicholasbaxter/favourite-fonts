@@ -8,14 +8,7 @@ import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "../theme";
 import { GlobalStyles } from "../global";
 
-// import FontContext from "../context/fonts/fontContext";
-// import AuthContext from "../context/auth/authContext";
-
 function FontView(props) {
-  // const authContext = useContext(AuthContext);
-  // const fontContext = useContext(FontContext);
-  // const { isAuthenticated, logout, user, loadUser } = authContext;
-
   //make array of sentences -- index of JSON data % index of word array in order to assign different ones
   const placeholder =
     "Though the gravity still dragged at him, his muscles were making great efforts to adjust. After the daily classes he no longer collapsed immediately into bed. Only the nightmares got worse.";

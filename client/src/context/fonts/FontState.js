@@ -13,9 +13,7 @@ import {
 const FontState = props => {
   const initialState = {
     favs: null,
-    // loading: true,
     current: null,
-    //  filtered: null,
     error: null
   };
 
@@ -87,7 +85,6 @@ const FontState = props => {
       value={{
         favs: state.favs,
         current: state.current,
-        // filtered: state.filtered,
         error: state.error,
         addFav,
         deleteFav,

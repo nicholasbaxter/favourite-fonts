@@ -1,6 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
-// import AlertContext from "../../context/alert/alertContext";
 import AuthContext from "../../context/auth/authContext";
 //MUI
 import Avatar from "@material-ui/core/Avatar";
