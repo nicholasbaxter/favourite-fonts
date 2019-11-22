@@ -20,6 +20,13 @@ function FontView(props) {
   const placeholder =
     "Though the gravity still dragged at him, his muscles were making great efforts to adjust. After the daily classes he no longer collapsed immediately into bed. Only the nightmares got worse.";
 
+  const reformHTTPS = e => {
+    let temp = e.split("");
+    temp.splice(4, 0, "s");
+    console.log(temp.join(""));
+    return temp.join("");
+  };
+
   const CardPreviewText = styled.p`
     font-size: ${props => (props.size ? props.size : "32px")};
     font-family: ${props => props.family}, Arial, Sans-Serif;
@@ -27,13 +34,9 @@ function FontView(props) {
 
     @font-face {
       font-family: ${props => props.family};
-      src: url(${props => props.url});
+      src: url(${props => reformHTTPS(props.url)});
     }
   `;
-
-  // const tagUpdate = () => {
-  //   console.log("!!!");
-  // };
 
   return (
     <ThemeProvider theme={props.isDark ? darkTheme : lightTheme}>
@@ -80,6 +83,7 @@ function FontView(props) {
                           }}
                         >
                           <h6>{item.family}</h6>
+
                           <button
                             style={{
                               backgroundColor: "transparent",
