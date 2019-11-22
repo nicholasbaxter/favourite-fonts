@@ -2,7 +2,7 @@
 var express = require("express");
 var path = require("path");
 // var cookieParser = require("cookie-parser");
-var logger = require("morgan");
+// var logger = require("morgan");
 var connectDB = require("./config/db");
 
 var app = express();
@@ -17,7 +17,7 @@ app.use(express.json({ extended: false }));
 // app.set("views", path.join(__dirname, "views"));
 // app.set("view engine", "jade");
 
-app.use(logger("dev"));
+// app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 // app.use(cookieParser());
@@ -58,7 +58,7 @@ if (process.env.NODE_ENV === "production") {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`app running on port ${PORT}`);
+  console.log(`App running on port ${PORT}`);
 });
 
 module.exports = app;
