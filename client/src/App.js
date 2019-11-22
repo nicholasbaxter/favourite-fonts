@@ -39,13 +39,7 @@ function App() {
 
   const authContext = useContext(AuthContext);
   const fontContext = useContext(FontContext);
-  let {
-    favs,
-    addFav,
-    deleteFav,
-    getFavs
-    // loading
-  } = fontContext;
+  let { favs, addFav, deleteFav, getFavs } = fontContext;
 
   useEffect(() => {
     getFavs();
