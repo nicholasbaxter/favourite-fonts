@@ -21,10 +21,9 @@ function FontView(props) {
     "Though the gravity still dragged at him, his muscles were making great efforts to adjust. After the daily classes he no longer collapsed immediately into bed. Only the nightmares got worse.";
 
   const reformHTTPS = e => {
-    let temp = e.split("");
-    temp.splice(4, 0, "s");
-    console.log(temp.join(""));
-    return temp.join("");
+    if (e) {
+      return `${e.slice(0, 4)}s${e.slice(4)}`;
+    }
   };
 
   const CardPreviewText = styled.p`
