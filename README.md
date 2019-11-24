@@ -18,7 +18,7 @@ App live here: [Heroku](https://hidden-temple-29940.herokuapp.com/)
 
 ### Local installation
 
-To run, clone the github repo, locate your terminal into the folder, install dependancies in both backend and client and run:
+To run, clone the github repo, locate your terminal into the folder, install dependencies in both backend and client and run:
 
 ```
 git clone git@github.com:eyecandycode/favourite-fonts.git
