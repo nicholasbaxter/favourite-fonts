@@ -16,24 +16,12 @@ A recreation of a well-known font repository with a modified feature set. Comple
 
 ### Local installation
 
-To run, clone the github repo, locate your terminal into the folder, install dependancies and run:
+To run, clone the github repo, locate your terminal into the folder, install dependancies in both backend and client and run:
 
 ```
 git clone git@github.com:eyecandycode/favourite-fonts.git
 cd ./favourite-fonts
 npm install
-npm run dev
-```
-
-### Install dependencies
-
-npm install
 npm client-install
-
-### Run Server
-
-```
-npm run dev # Express & React :3000 & :5000
-npm run server # Express API Only :5000
-npm run client # React Client Only :3000
+npm run dev
 ```

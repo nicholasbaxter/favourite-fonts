@@ -74,27 +74,29 @@ function SearchBar(props) {
               placeholder="Search fonts"
             />
           </div>
+          <input
+            type="text"
+            className="hide-mobile"
+            style={{
+              color: props.isDark ? "#FAFAFA" : "#363537",
+              borderTop: "none",
+              borderBottom: "none",
+              borderLeft: "1px solid #dadce0",
+              borderRight: "none",
+              padding: "0 17px 0 17px",
+              background: "transparent",
+              fontSize: "14px",
+              fontFamily: "Roboto",
+              fontWeight: "bold"
+            }}
+            value={props.typeInput}
+            onChange={e => handleTypeChange(e)}
+            placeholder="Type something"
+          />
           <Mobile>
-            <input
-              type="text"
-              style={{
-                color: props.isDark ? "#FAFAFA" : "#363537",
-                borderTop: "none",
-                borderBottom: "none",
-                borderRight: "1px solid #dadce0",
-                borderLeft: "1px solid #dadce0",
-                padding: "0 17px 0 17px",
-                background: "transparent",
-                fontSize: "14px",
-                fontFamily: "Roboto",
-                fontWeight: "bold"
-              }}
-              value={props.typeInput}
-              onChange={e => handleTypeChange(e)}
-              placeholder="Type something"
-            />
             <div
               style={{
+                borderLeft: "1px solid #dadce0",
                 width: "100px",
                 display: "flex",
                 flexDirection: "column",

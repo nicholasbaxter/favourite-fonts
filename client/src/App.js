@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { CircleArrow as ScrollUpButton } from "react-scroll-up-button";
+// import debounce from "lodash.debounce";
 //Pages
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
@@ -112,6 +113,7 @@ function App() {
     setTypeInput("");
     setIsDark(false);
     setIsList(false);
+    handleSearchInput("");
   };
 
   const resetFavs = () => {

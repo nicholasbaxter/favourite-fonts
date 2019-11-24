@@ -1,12 +1,12 @@
 var express = require("express");
 var router = express.Router();
 var request = require("request");
+require("dotenv").config();
 
-// var app = express();
+console.log(process.env.DB_HOST);
 
 const options = {
-  url:
-    "https://www.googleapis.com/webfonts/v1/webfonts?sort=popularity&key=AIzaSyBlM91SgYFDxMKl8uGYUhbee7qTZZrpVsI",
+  url: `https://www.googleapis.com/webfonts/v1/webfonts?sort=popularity&key=${process.env.GOOGLE_KEY}`,
   method: "GET",
   json: true
 };

@@ -47,8 +47,9 @@ export const GlobalStyles = createGlobalStyle`
   }
   
   .hide-mobile {
-    @media (max-width: 672px) {
+    @media (max-width: 460px) {
       display: none;
+      borderRight: "none",
     }
   }
   @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
