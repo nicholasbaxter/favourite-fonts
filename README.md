@@ -2,6 +2,8 @@
 
 A recreation of a well-known font repository with a modified feature set. Complete with authentication, users can log in and save their favourite fonts to the database to retrieve later.
 
+App live here: [Heroku](https://hidden-temple-29940.herokuapp.com/)
+
 ### Features
 
 - Font catalog displaying the most popular fonts from the [Google Fonts Developer API](https://developers.google.com/fonts/docs/developer_api)
